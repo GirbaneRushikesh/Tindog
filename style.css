@@ -1,0 +1,222 @@
+/* Root colors and gradients */
+:root {
+  --d1: 320.54deg;
+  --d2: 58.72deg;
+  --d3: 121.28deg;
+  --d4: 180deg;
+  --d5: 52.23deg;
+  --d6: 121.28deg;
+  --d7: 50% 72.12% at 50% 50%;
+  --d8: 72.37%;
+  --p1: 0%;
+  --p2: 100%;
+  --p3: 0.5%;
+  --blend-one: screen, color-dodge, color-burn, screen, overlay,
+    difference, color-dodge;
+
+  --c1: #af1015;
+  --c2: #e03cde;
+  --c3: #8149d3;
+  --c4: #2a257c;
+  --c5: #e7f02d;
+  --c6: #d65462;
+  --c7: #2ff264;
+  --c8: #4e6fb5;
+  --c9: #b8771a;
+  --c10: #f9dd63;
+  --c11: #8294a6;
+  --c12: #db9175;
+  --c13: #972465;
+  --c14: #e8c7ed;
+  --c15: #5e08a7;
+  --c16: #f35eee;
+  --c17: #8cb64e;
+  --c18: #2d7d19;
+  --c19: #9bf7ff;
+  --c20: #6637d4;
+}
+
+/* Background gradient for entire page */
+body {
+  background: linear-gradient(
+      115deg,
+      rgba(255, 75, 43, 0.7),
+      rgba(255, 65, 63, 0.9)
+    ),
+    url("https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1470&q=80")
+      no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #ff4b2b;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #ff4b2b !important;
+  text-shadow: 0 0 6px #ff4b2b;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #f0f0f0 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff4b2b !important;
+  text-shadow: 0 0 8px #ff4b2b;
+}
+
+/* Hero section text */
+.hero-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero-text h1 {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(255, 75, 43, 0.9);
+}
+
+.hero-text p.lead {
+  font-size: 1.2rem;
+  color: #ffd1c1;
+}
+
+/* Hero image */
+.hero-image {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(255, 75, 43, 0.7);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.7);
+  transition: background 0.4s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #ff6f91, #ff7f50);
+  box-shadow: 0 6px 14px rgba(255, 79, 45, 0.9);
+}
+
+/* Outline secondary button */
+.btn-outline-secondary {
+  border-color: white;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: white;
+  color: #ff4b2b;
+}
+
+/* Features section */
+.features-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 75, 43, 0.3);
+}
+
+/* Feature icon */
+.feature-icon {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+/* Single section */
+.single-section {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #fafafa;
+}
+
+/* Single section image */
+.single-img {
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 16px rgba(255, 75, 43, 0.7);
+}
+
+/* Pricing section */
+.pricing-section {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-bottom: 4rem;
+  color: #fafafa;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 0 30px rgba(0, 0, 255, 0.5);
+}
+
+.pricing-header {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 1rem;
+  color: #4a90e2;
+}
+
+.card-header.text-bg-primary {
+  background-color: #4a90e2 !important;
+  border-color: #3c7dcf !important;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.7);
+}
+
+.list-unstyled li {
+  padding: 0.25rem 0;
+}
+
+/* Buttons inside pricing */
+.btn-outline-primary {
+  color: #4a90e2;
+  border-color: #4a90e2;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  border-color: #3c7dcf;
+}
+
+.btn-primary:hover {
+  background-color: #6aa5ff;
+  border-color: #4a90e2;
+}
